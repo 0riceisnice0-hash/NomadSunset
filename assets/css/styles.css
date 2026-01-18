@@ -1005,8 +1005,12 @@ strong {
 }
 
 .card-featured {
-  border-color: rgba(72, 255, 200, 0.4);
+  border: 1px solid rgba(72, 255, 200, 0.4);
   box-shadow: 0 4px 16px var(--shadow), 0 0 30px rgba(72, 255, 200, 0.1);
+  padding: var(--space-lg);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .offer-highlight {

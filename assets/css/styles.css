@@ -746,6 +746,32 @@ strong {
   font-style: italic;
 }
 
+/* Payment Notification Form */
+.payment-notification-form {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: rgba(10, 12, 20, 0.4);
+  border: 1px solid rgba(214, 180, 90, 0.3);
+  border-radius: 4px;
+}
+
+.payment-notification-form h5 {
+  color: var(--gold0);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-large);
+}
+
+.payment-notification-form .form-note {
+  font-size: var(--font-size-small);
+  color: var(--muted);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.payment-notification-form .contact-form {
+  margin-top: var(--space-md);
+}
+
 /* ========================================
    Feedback/Testimonials
    ======================================== */

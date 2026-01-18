@@ -88,7 +88,43 @@
             <p><strong>Investment: £60 per hour.</strong></p>
             
             <div class="paypal-links">
-              <a href="https://www.paypal.me/NomadsSunset" class="button" target="_blank" rel="noopener">Pay via PayPal.me</a>
+              <a href="https://www.paypal.me/NomadsSunset/60" class="button" target="_blank" rel="noopener">Pay £60 via PayPal.me</a>
+            </div>
+            
+            <!-- Payment Notification Form -->
+            <div class="payment-notification-form">
+              <h5>After Payment: Notify Us</h5>
+              <p class="form-note">Please complete this form after making your PayPal payment so we can track your booking.</p>
+              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                <input type="hidden" name="service" value="Energy Balancing - £60">
+                
+                <div class="form-group">
+                  <label for="energy-name">Your Name <span aria-label="required">*</span></label>
+                  <input type="text" id="energy-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="energy-email">Your Email <span aria-label="required">*</span></label>
+                  <input type="email" id="energy-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="energy-paypal-email">PayPal Email Used <span aria-label="required">*</span></label>
+                  <input type="email" id="energy-paypal-email" name="paypal_email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="energy-transaction">Transaction ID (if available)</label>
+                  <input type="text" id="energy-transaction" name="transaction_id">
+                </div>
+                
+                <div class="form-group">
+                  <label for="energy-preferred-dates">Preferred Session Dates/Times</label>
+                  <textarea id="energy-preferred-dates" name="preferred_dates" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="button button-secondary">Submit Payment Notification</button>
+              </form>
             </div>
             
             <div class="paypal-placeholder">
@@ -117,7 +153,43 @@
             <p><strong class="price-offer">Spring Offer: £66 for the full six-week programme</strong></p>
             
             <div class="paypal-links">
-              <a href="https://www.paypal.me/NomadsSunset" class="button" target="_blank" rel="noopener">Pay via PayPal.me</a>
+              <a href="https://www.paypal.me/NomadsSunset/66" class="button" target="_blank" rel="noopener">Pay £66 via PayPal.me</a>
+            </div>
+            
+            <!-- Payment Notification Form -->
+            <div class="payment-notification-form">
+              <h5>After Payment: Notify Us</h5>
+              <p class="form-note">Please complete this form after making your PayPal payment so we can track your booking.</p>
+              <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                <input type="hidden" name="service" value="Breathwork and Chakra Sessions - Spring Offer £66">
+                
+                <div class="form-group">
+                  <label for="breathwork-name">Your Name <span aria-label="required">*</span></label>
+                  <input type="text" id="breathwork-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="breathwork-email">Your Email <span aria-label="required">*</span></label>
+                  <input type="email" id="breathwork-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="breathwork-paypal-email">PayPal Email Used <span aria-label="required">*</span></label>
+                  <input type="email" id="breathwork-paypal-email" name="paypal_email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="breathwork-transaction">Transaction ID (if available)</label>
+                  <input type="text" id="breathwork-transaction" name="transaction_id">
+                </div>
+                
+                <div class="form-group">
+                  <label for="breathwork-preferred-dates">Preferred Start Date for Programme</label>
+                  <textarea id="breathwork-preferred-dates" name="preferred_dates" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="button button-secondary">Submit Payment Notification</button>
+              </form>
             </div>
             
             <div class="paypal-placeholder">

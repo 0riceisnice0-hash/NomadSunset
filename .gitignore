@@ -1,0 +1,18 @@
+# Placeholder notes (not needed in production)
+*.placeholder
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log

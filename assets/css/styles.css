@@ -987,6 +987,48 @@ strong {
 }
 
 /* ========================================
+   Spring Offer Badge
+   ======================================== */
+
+/* Spring Offer Badge */
+.spring-offer-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #48ffc8, #4a9eff);
+  color: var(--bg0);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+  border-radius: 2px;
+}
+
+.card-featured {
+  border-color: rgba(72, 255, 200, 0.4);
+  box-shadow: 0 4px 16px var(--shadow), 0 0 30px rgba(72, 255, 200, 0.1);
+}
+
+.offer-highlight {
+  background: linear-gradient(135deg, rgba(72, 255, 200, 0.1), rgba(74, 158, 255, 0.1));
+  border: 1px solid rgba(72, 255, 200, 0.3);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.offer-highlight .price-original {
+  text-decoration: line-through;
+  color: var(--muted);
+  margin-right: 0.5rem;
+}
+
+.offer-highlight .price-offer {
+  color: #48ffc8;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* ========================================
    Utility Classes
    ======================================== */
 

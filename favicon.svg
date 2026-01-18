@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="sunsetGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7a6f5d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Horizon line -->
+  <line x1="10" y1="60" x2="90" y2="60" stroke="#7a6f5d" stroke-width="2"/>
+  
+  <!-- Sun rays -->
+  <circle cx="50" cy="60" r="25" fill="url(#sunsetGradient)" opacity="0.8"/>
+  
+  <!-- Path/road leading to horizon -->
+  <path d="M 50 90 L 45 60 L 50 60 L 55 60 Z" fill="#7a6f5d" opacity="0.6"/>
+</svg>

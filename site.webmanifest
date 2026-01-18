@@ -1,0 +1,16 @@
+{
+  "name": "Nomads Sunset",
+  "short_name": "Nomads Sunset",
+  "description": "Spiritual counselling and Master Reiki services",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fafaf8",
+  "theme_color": "#7a6f5d",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

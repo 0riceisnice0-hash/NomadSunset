@@ -1,0 +1,23 @@
+# Jekyll configuration for GitHub Pages
+title: NomadSunset
+description: NomadSunset Website
+baseurl: ""
+url: "https://0riceisnice0-hash.github.io/NomadSunset"
+
+# Build settings
+markdown: kramdown
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - .gitignore
+
+# Include HTML files
+include:
+  - index.html
+  - about.html
+  - contact.html
+  - ebooklets.html
+  - meditations.html
+  - offerings.html
+  - privacy.html

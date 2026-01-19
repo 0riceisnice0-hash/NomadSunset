@@ -1,32 +1,34 @@
 /* ========================================
-   CSS Variables and Design System - Cosmic Theme
+   CSS Variables and Design System - Alchemical Theme
    ======================================== */
 
 :root {
-  /* Cosmic Color Palette */
-  --bg0: #05060B;
-  --bg1: #080A13;
-  --panel: rgba(10, 12, 20, 0.55);
-  --text: rgba(245, 246, 250, 0.92);
-  --muted: rgba(245, 246, 250, 0.68);
-  --gold0: #F6E6A6;
-  --gold1: #D6B45A;
-  --gold2: #9D7B2F;
-  --aurora: rgba(72, 255, 200, 0.18);
+  /* Alchemical Color Palette */
+  --bg0: #341A0F;  /* Deep near-black brown */
+  --bg1: #572E1C;  /* Dark bronze */
+  --panel: rgba(87, 46, 28, 0.55);
+  --text: rgba(250, 245, 235, 0.92);  /* Cream/warm white */
+  --muted: rgba(250, 245, 235, 0.68);
+  --gold0: #F1B358;  /* Soft highlight gold */
+  --gold1: #DF852B;  /* Rich gold */
+  --gold2: #B36A38;  /* Copper */
+  --ember: #B05010;  /* Ember orange */
+  --leather: #814B31;  /* Warm leather brown */
+  --aurora: rgba(223, 133, 43, 0.18);
   --shadow: rgba(0, 0, 0, 0.55);
   
   /* Legacy aliases for compatibility */
   --color-background: var(--bg0);
   --color-text: var(--text);
   --color-text-light: var(--muted);
-  --color-border: rgba(218, 180, 90, 0.25);
+  --color-border: rgba(223, 133, 43, 0.25);
   --color-accent: var(--gold1);
   --color-accent-hover: var(--gold0);
   --color-white: var(--text);
-  --color-overlay: rgba(0, 0, 0, 0.65);
+  --color-overlay: rgba(52, 26, 15, 0.65);
   
-  /* Hero and About Images from Unsplash (free for commercial use, no attribution required) */
-  --hero-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2400&q=80');
+  /* Hero and About Images */
+  --hero-image: url('assets/img/hero.jpg');
   --about-image: url('https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=2400&q=80');
   --texture-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=2400&q=80');
   
@@ -1019,7 +1021,7 @@ strong {
 /* Spring Offer Badge */
 .spring-offer-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #48ffc8, #4a9eff);
+  background: linear-gradient(135deg, var(--ember), var(--gold1));
   color: var(--bg0);
   padding: 0.25rem 0.75rem;
   font-size: 0.75rem;
@@ -1031,8 +1033,8 @@ strong {
 }
 
 .card-featured {
-  border: 1px solid rgba(72, 255, 200, 0.4);
-  box-shadow: 0 4px 16px var(--shadow), 0 0 30px rgba(72, 255, 200, 0.1);
+  border: 1px solid rgba(223, 133, 43, 0.4);
+  box-shadow: 0 4px 16px var(--shadow), 0 0 30px rgba(223, 133, 43, 0.1);
   padding: var(--space-lg);
   background: var(--panel);
   backdrop-filter: blur(10px);
@@ -1040,8 +1042,8 @@ strong {
 }
 
 .offer-highlight {
-  background: linear-gradient(135deg, rgba(72, 255, 200, 0.1), rgba(74, 158, 255, 0.1));
-  border: 1px solid rgba(72, 255, 200, 0.3);
+  background: linear-gradient(135deg, rgba(176, 80, 16, 0.1), rgba(223, 133, 43, 0.1));
+  border: 1px solid rgba(223, 133, 43, 0.3);
   padding: var(--space-md);
   margin: var(--space-md) 0;
 }
@@ -1053,7 +1055,7 @@ strong {
 }
 
 .offer-highlight .price-offer {
-  color: #48ffc8;
+  color: var(--gold0);
   font-weight: 600;
   font-size: 1.25rem;
 }

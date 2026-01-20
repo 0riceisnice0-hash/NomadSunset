@@ -397,7 +397,7 @@ strong {
     ),
     var(--hero-image);
   background-size: cover;
-  background-position: center;
+  background-position: center 75%;
   background-repeat: no-repeat;
   color: var(--text);
   padding: var(--space-2xl) var(--space-md);

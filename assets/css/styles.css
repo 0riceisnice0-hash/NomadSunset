@@ -28,7 +28,7 @@
   --color-overlay: rgba(52, 26, 15, 0.65);
   
   /* Hero and About Images */
-  --hero-image: url('../img/hero.png');
+  --hero-image: url('assets/img/hero.jpg');
   --about-image: url('https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=2400&q=80');
   --texture-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=2400&q=80');
   
@@ -116,7 +116,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" x="0" y="0" width="10" height="10" patternUnits="userSpace[...]
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="stars" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="0.4" fill="rgba(255,255,255,0.6)"/><circle cx="7" cy="4" r="0.3" fill="rgba(255,255,255,0.4)"/><circle cx="3" cy="8" r="0.2" fill="rgba(255,255,255,0.5)"/></pattern></defs><rect width="100" height="100" fill="url(%23stars)"/></svg>');
   background-repeat: repeat;
   opacity: 0.3;
   pointer-events: none;
@@ -299,6 +299,7 @@ strong {
 
 .menu-toggle:focus-visible {
   outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 /* Navigation */
@@ -699,8 +700,424 @@ strong {
   box-shadow: 0 4px 16px rgba(214, 180, 90, 0.2);
 }
 
-.button-secondary:focus-visible {
-  outline: 2px solid var(--gold0);
+/* ========================================
+   PayPal Components
+   ======================================== */
+
+.payment-section {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 16px var(--shadow);
 }
 
-/* ... rest of file unchanged ... */
+.payment-section h4 {
+  margin-bottom: var(--space-md);
+  color: var(--gold1);
+}
+
+.paypal-links {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.paypal-placeholder {
+  border: 2px dashed var(--color-border);
+  padding: var(--space-lg);
+  text-align: center;
+  color: var(--muted);
+  margin-top: var(--space-md);
+  background: rgba(5, 6, 11, 0.3);
+}
+
+.paypal-placeholder strong {
+  display: block;
+  margin-bottom: var(--space-sm);
+  color: var(--gold1);
+}
+
+.paypal-note {
+  font-size: var(--font-size-small);
+  color: var(--muted);
+  margin-top: var(--space-sm);
+  font-style: italic;
+}
+
+/* Payment Notification Form */
+.payment-notification-form {
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: rgba(10, 12, 20, 0.4);
+  border: 1px solid rgba(214, 180, 90, 0.3);
+  border-radius: 4px;
+}
+
+.payment-notification-form h5 {
+  color: var(--gold0);
+  margin-bottom: var(--space-sm);
+  font-size: var(--font-size-large);
+}
+
+.payment-notification-form .form-note {
+  font-size: var(--font-size-small);
+  color: var(--muted);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
+.payment-notification-form .contact-form {
+  margin-top: var(--space-md);
+}
+
+/* ========================================
+   Feedback/Testimonials
+   ======================================== */
+
+.feedback-section {
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-left: 3px solid var(--gold1);
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.feedback-section h3 {
+  margin-bottom: var(--space-md);
+  color: var(--gold0);
+}
+
+.testimonial {
+  margin-bottom: var(--space-md);
+  font-style: italic;
+  color: var(--muted);
+}
+
+.testimonial:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   Meditation List
+   ======================================== */
+
+.meditation-list {
+  list-style: none;
+  margin-top: var(--space-lg);
+}
+
+.meditation-item {
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  margin-bottom: var(--space-md);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  box-shadow: 0 2px 12px var(--shadow);
+  transition: all var(--transition-base);
+}
+
+.meditation-item:hover {
+  border-color: rgba(218, 180, 90, 0.5);
+  box-shadow: 0 4px 20px var(--shadow);
+}
+
+.meditation-title {
+  font-weight: 500;
+  flex: 1;
+  min-width: 200px;
+  color: var(--text);
+}
+
+/* ========================================
+   eBooklet List
+   ======================================== */
+
+.ebooklet-list {
+  list-style: none;
+  margin-top: var(--space-lg);
+}
+
+.ebooklet-item {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ebooklet-item:last-child {
+  border-bottom: none;
+}
+
+.ebooklet-title {
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+  color: var(--gold0);
+}
+
+.ebooklet-description {
+  color: var(--muted);
+}
+
+/* ========================================
+   Forms
+   ======================================== */
+
+.contact-form {
+  max-width: 600px;
+  margin-top: var(--space-lg);
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+  color: var(--gold1);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text);
+  transition: all var(--transition-base);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold1);
+  box-shadow: 0 0 0 2px rgba(214, 180, 90, 0.2);
+}
+
+.form-group textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* ========================================
+   About Page - Logo
+   ======================================== */
+
+.credentials {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+  margin: var(--space-lg) 0;
+  flex-wrap: wrap;
+}
+
+.iphm-logo {
+  max-width: 150px;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.site-footer {
+  background-color: rgba(5, 6, 11, 0.9);
+  border-top: 1px solid var(--color-border);
+  padding: var(--space-xl) 0 var(--space-md);
+  margin-top: var(--space-2xl);
+  position: relative;
+}
+
+.footer-content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+  display: grid;
+  gap: var(--space-lg);
+  position: relative;
+  z-index: 1;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-md);
+}
+
+.footer-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: var(--font-size-small);
+  transition: color var(--transition-base);
+}
+
+.footer-nav a:hover {
+  color: var(--gold0);
+}
+
+.footer-contact {
+  margin-bottom: var(--space-md);
+}
+
+.footer-contact a {
+  color: var(--gold1);
+  word-break: break-all;
+  transition: color var(--transition-base);
+}
+
+.footer-contact a:hover {
+  color: var(--gold0);
+}
+
+.footer-disclaimer {
+  font-size: var(--font-size-small);
+  color: var(--muted);
+  line-height: 1.6;
+  margin: var(--space-md) 0;
+  padding: var(--space-md);
+  background: rgba(10, 12, 20, 0.4);
+  border-left: 2px solid var(--gold2);
+}
+
+.footer-copyright {
+  font-size: var(--font-size-small);
+  color: var(--muted);
+  text-align: center;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Image Attribution Note */
+.image-attribution {
+  font-size: 0.75rem;
+  color: var(--muted);
+  opacity: 0.6;
+  margin-top: var(--space-sm);
+}
+
+/* ========================================
+   Spring Offer Badge
+   ======================================== */
+
+/* Spring Offer Badge */
+.spring-offer-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--ember), var(--gold1));
+  color: var(--bg0);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+  border-radius: 2px;
+}
+
+.card-featured {
+  border: 1px solid rgba(223, 133, 43, 0.4);
+  box-shadow: 0 4px 16px var(--shadow), 0 0 30px rgba(223, 133, 43, 0.1);
+  padding: var(--space-lg);
+  background: var(--panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.offer-highlight {
+  background: linear-gradient(135deg, rgba(176, 80, 16, 0.1), rgba(223, 133, 43, 0.1));
+  border: 1px solid rgba(223, 133, 43, 0.3);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+.offer-highlight .price-original {
+  text-decoration: line-through;
+  color: var(--muted);
+  margin-right: 0.5rem;
+}
+
+.offer-highlight .price-offer {
+  color: var(--gold0);
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+
+.text-center {
+  text-align: center;
+}
+
+.mt-lg {
+  margin-top: var(--space-lg);
+}
+
+.mb-lg {
+  margin-bottom: var(--space-lg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ========================================
+   Responsive Typography Adjustments
+   ======================================== */
+
+@media (max-width: 768px) {
+  :root {
+    --font-size-h1: 2rem;
+    --font-size-h2: 1.625rem;
+    --font-size-h3: 1.375rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ========================================
+   Print Styles
+   ======================================== */
+
+@media print {
+  .site-header,
+  .site-footer,
+  .menu-toggle,
+  .button {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+}
